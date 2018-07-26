@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import { I18n, Trans } from 'react-i18next';
 
 export default class header extends Component {
@@ -27,9 +28,9 @@ export default class header extends Component {
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <img src="./image/menu-burger2.png" className="img-responsive" />
               </button>
-              <a className="navbar-brand" href="http://www.discountquebec.com/libreservice/">
+              <Link className="navbar-brand" to="/">
                 <img src={t('logo')} className="img-responsive logo" />
-              </a>
+              </Link>
             </div>
             <div className="col-lg-6 col-lg-offset-6  col-md-2 col-md-offset-10 pull-right">
             <div className="hidden-sm hidden-md hidden-xs" id="accountAndSubscribe">
@@ -54,22 +55,22 @@ export default class header extends Component {
               <div className="menu-menu-container">
                 <ul id="menu-menu" className="headerTabs nav navbar-nav col-xs-12 col-sm-pull-1 col-lg-pull-3 no-padding ">
                   <li id="menu-item-22" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-22">
-                    <a href="https://www.discountquebec.com/libreservice/?page_id=29">{t('Accueil')}</a>
+                    <Link to="/">{t('Accueil')}</Link>
                   </li>
                   <li id="menu-item-272" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-272">
-                    <a href="https://www.discountquebec.com/libreservice/tarifs/">{t('Tarifs')}</a>
+                    <Link to="/tarifs">{t('Tarifs')}</Link>
                   </li>
                   <li id="menu-item-25" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
-                    <a href="https://www.discountquebec.com/libreservice/fonctionnement/">{t('Fonctionnement')}</a>
+                    <Link to="/fonctionnement">{t('Fonctionnement')}</Link>
                   </li>
                   <li id="menu-item-27" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
-                    <a href="https://www.discountquebec.com/libreservice/solution/">{t('Solution Écosociale')}</a>
+                    <Link to="/solution">{t('Solution Écosociale')}</Link>
                   </li>
                   <li id="menu-item-251" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-251">
-                    <a href="https://www.discountquebec.com/libreservice/faq-fr/">{t('FAQ')}</a>
+                    <Link to="/FAQ">{t('FAQ')}</Link>
                   </li>
                   <li id="menu-item-23" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
-                    <a href="https://www.discountquebec.com/libreservice/contactez-nous/">{t('Contactez-nous')}</a>
+                    <Link to="/contactez_nous">{t('Contactez-nous')}</Link>
                   </li>
                 </ul>
               </div>
@@ -79,22 +80,22 @@ export default class header extends Component {
               <div className="menu-menu-container">
                 <ul id="menu-menu-1" className="headerTabs nav navbar-nav col-xs-12 col-sm-pull-1 col-lg-pull-3 no-padding ">
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-22">
-                    <a href="https://www.discountquebec.com/libreservice/?page_id=29">{t('Accueil')}</a>
+                    <Link to="/">{t('Accueil')}</Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-272">
-                    <a href="https://www.discountquebec.com/libreservice/tarifs/">{t('Tarifs')}</a>
+                    <Link to="/tarifs">{t('Tarifs')}</Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
-                    <a href="https://www.discountquebec.com/libreservice/fonctionnement/">{t('Fonctionnement')}</a>
+                    <Link to="/fonctionnement">{t('Fonctionnement')}</Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
-                    <a href="https://www.discountquebec.com/libreservice/solution/">{t('Solution Écosociale')}</a>
+                    <Link to="/solution">{t('Solution Écosociale')}</Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-251">
-                    <a href="https://www.discountquebec.com/libreservice/faq-fr/">{t('FAQ')}</a>
+                    <Link to="/FAQ">{t('FAQ')}</Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
-                    <a href="https://www.discountquebec.com/libreservice/contactez-nous/">{t('Contactez-nous')}</a>
+                    <Link to="/contactez_nous">{t('Contactez-nous')}</Link>
                   </li>
                 </ul>
               </div>

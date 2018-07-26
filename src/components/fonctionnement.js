@@ -30,7 +30,7 @@ export default class tarif extends Component {
                 <div className="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 no-padding mt60">
                   <div className="row">
                     <div className="imageLeftText">
-                      <img src={t('fonctionnementImg3')} />
+                      <img src={t('UserIcon')} />
                     </div>
                     <div className="textRight">
                       <p className="header text-white pl30">{t('fonctionnement1header1')}</p>
@@ -39,7 +39,7 @@ export default class tarif extends Component {
                   </div>
                   <div className="row">
                     <div className="imageLeftText">
-                      <img src={t('fonctionnementImg4')} />
+                      <img src={t('calendarIcon')} />
                     </div>
                     <div className="textRight">
                       <p className="header text-white">{t('fonctionnement2header1')}</p>
@@ -48,7 +48,7 @@ export default class tarif extends Component {
                   </div>
                   <div className="row">
                     <div className="imageLeftText">
-                      <img src={t('fonctionnementImg5')} />
+                      <img src={t('unlockIcon')} />
                     </div>
                     <div className="textRight">
                       <p className="header text-white">{t('fonctionnement3header1')}</p>
@@ -57,7 +57,7 @@ export default class tarif extends Component {
                   </div>
                   <div className="row">
                     <div className="imageLeftText">
-                      <img src={t('fonctionnementImg6')} />
+                      <img src={t('volantIcon')} />
                     </div>
                     <div className="textRight">
                       <p className="header text-white">{t('fonctionnement4header1')}</p>
@@ -65,7 +65,7 @@ export default class tarif extends Component {
                     </div>
                   </div>
                   <div className="center-block center-inside">
-                    <a href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&lang=fr" className="btn btn-lg inline-block greensubsribeButton">{t('inscrivez-vous')}</a>
+                    <a href={t('fonctionnementlink1')} className="btn btn-lg inline-block greensubsribeButton">{t('inscrivez-vous')}</a>
                   </div>
                 </div>
               </div>

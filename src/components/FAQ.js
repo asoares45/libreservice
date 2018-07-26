@@ -206,7 +206,7 @@ export default class tarif extends Component {
                       <div id="target-id478" className="collapseomatic_content " style={{display: 'none'}}>
                         <p>{t('LoFAQ16Texte1')}</p>
                       </div>
-                      <p className="collapseomatic noarrow" id="id9680" tabIndex title="Comment faire l'inspection du véhicule ? ">{t('LoFAQ17Header1')}/p>
+                      <p className="collapseomatic noarrow" id="id9680" tabIndex title="Comment faire l'inspection du véhicule ? ">{t('LoFAQ17Header1')}</p>
                       <div id="target-id9680" className="collapseomatic_content " style={{display: 'none'}}>
                         <p>{t('LoFAQ17Texte1')}</p>
                       </div>
@@ -327,7 +327,6 @@ export default class tarif extends Component {
                       <div id="target-id9645" className="collapseomatic_content " style={{display: 'none'}}>
                         <p>{t('CoFAQ3Texte1')}</p>
                       </div>
-                      </p>
                     </div>
                   </div>
                 </div>

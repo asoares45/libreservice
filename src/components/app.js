@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import { I18n, Trans } from 'react-i18next';
 import Header from './inclus/header';
 import Footer from './inclus/footer';
@@ -14,11 +15,11 @@ export default class App extends Component {
       <div id="phoneBackground" className="row">
         <div id="img_container" className="hidden-xs gray-background">
           <img className="img-responsive" style={{maxHeight: 728 }} src={t('accueils1image')} />
-          <a className="btn btn-lg greenReserveButton" href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('réservez')}</a>
+          <a className="btn btn-lg greenReserveButton" href={t('linkInscription')}>{t('réservez')}</a>
         </div>
         <div id="" className="hidden-lg hidden-sm hidden-md hidden-xl gray-background">
           <img className="img-responsive img-center" style={{width: '100%'}} src={t('accueils1image')} />
-          <a className="btn btn-lg greenReserveButton" href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('réservez')}</a>
+          <a className="btn btn-lg greenReserveButton" href={t('linkInscription')}>{t('réservez')}</a>
         </div>
       </div>
       <div className="row m0 greenBackground home mt-5">
@@ -44,7 +45,7 @@ export default class App extends Component {
         </div>
         <div className="row m0" style={{margin: 'auto'}}>
           <div className="center-block center-inside">
-            <a className="btn btn-lg mb50 mt50 inline-block whitesubsribeButton" href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('inscrivez-vous')}</a>
+            <a className="btn btn-lg mb50 mt50 inline-block whitesubsribeButton" href={t('linkInscription')}>{t('inscrivez-vous')}</a>
           </div>
         </div>
       </div>
@@ -53,7 +54,7 @@ export default class App extends Component {
         <div className="col-lg-3 col-lg-offset-2 hidden-md hidden-sm hidden-xs ">
           <img className="center-block" src={t('accueils3image1')} />
           <div className="center-block center-inside">
-            <a className="btn btn-lg greensubsribeButton inline-block" style={{margin: '20px auto 60px auto'}} href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('inscrivez-vous')}</a>
+            <a className="btn btn-lg greensubsribeButton inline-block" style={{margin: '20px auto 60px auto'}} href={t('linkInscription')}>{t('inscrivez-vous')}</a>
           </div>
         </div>
         <div className="col-lg-4 col-lg-offset-1 col-xs-10 col-xs-offset-1">
@@ -64,7 +65,7 @@ export default class App extends Component {
             <img className="img-responsive img-center" src={t('accueils3image2')} />
           </div>
           <div className="row text-center">
-            <a className="btn btn-lg blueRatesButton" href="https://www.discountquebec.com/libreservice/tarifs/">{t('accueils3b1')}</a>
+            <Link to="/tarifs">{t('Tarifs')}</Link>
             <p className="tinyText mt30">{t('accueils3sub1')}<a href="https://www.discountquebec.com/libreservice/faq-fr/">{t('cliquez ici')}</a>{t('accueils3sub2')}</p>
           </div>
         </div>
@@ -76,7 +77,7 @@ export default class App extends Component {
             <p className="header text-white mt15 ">{t('Une solution Écosociale')}</p>
             <p className="textNormal text-white">{t('accueils4sub1')}</p>
             <p className="textNormal text-white">{t('accueils4sub2')}</p>
-            <a id="learnMore" className="btn btn-lg whitesubsribeButton mt30 mb30" href="https://www.discountquebec.com/libreservice/solution/">{t('accueils4sub3')}</a>
+            <Link to="/solution">{t('Solution Écosociale')}</Link>
           </div>
           <img className="img-responsive hidden-sm hidden-xs" style={{position: 'relative', top: -200, marginBottom: -150}} src={t('accueilImg12')} />
         </div>
@@ -86,7 +87,7 @@ export default class App extends Component {
         <div className="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 no-padding">
           <div className="row m0 mb60">
             <div className="imageLeftText">
-              <img style={{float: 'left'}} src={t('accueilImg13')} />
+              <img style={{float: 'left'}} src={t('UserIcon')} />
             </div>
             <div className="textRight">
               <p className="header text-white pl30">{t('accueils5header1')}</p>
@@ -95,7 +96,7 @@ export default class App extends Component {
           </div>
           <div className="row m0 mb60">
             <div className="imageLeftText">
-              <img style={{float: 'left'}} src={t('accueilImg14')} />
+              <img style={{float: 'left'}} src={t('calendarIcon')} />
             </div>
             <div className="textRight">
               <p className="header text-white">{t('accueils5header2')}</p>
@@ -104,7 +105,7 @@ export default class App extends Component {
           </div>
           <div className="row m0 mb60">
             <div className="imageLeftText">
-              <img style={{float: 'left'}} src={t('accueilImg15')} />
+              <img style={{float: 'left'}} src={t('unlockIcon')} />
             </div>
             <div className="textRight">
               <p className="header text-white">{t('accueils5header3')}</p>
@@ -113,7 +114,7 @@ export default class App extends Component {
           </div>
           <div className="row m0 mb30">
             <div className="imageLeftText">
-              <img style={{float: 'left'}} src={t('accueilImg16')} />
+              <img style={{float: 'left'}} src={t('volantIcon')} />
             </div>
             <div className="textRight">
               <p className="header text-white">{t('accueils5header4')}</p>
@@ -121,7 +122,7 @@ export default class App extends Component {
             </div>
           </div>
           <div className="center-block center-inside">
-            <a className="btn btn-lg inline-block greensubsribeButton mt30" href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('inscrivez-vous')}</a>
+            <a className="btn btn-lg inline-block greensubsribeButton mt30" href={t('linkInscription')}>{t('inscrivez-vous')}</a>
           </div>
         </div>
       </div>
@@ -138,12 +139,12 @@ export default class App extends Component {
         </div>
         <div className="mb30 mt15 col-lg-2 mt100 col-xs-12 hidden-md hidden-sm hidden-xs">
           <div className="center-block center-inside">
-            <a className="btn btn-lg mt30 inline-block greensubsribeButton" href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('Réservez maintenant!')}</a>
+            <a className="btn btn-lg mt30 inline-block greensubsribeButton" href={t('linkInscription')}>{t('Réservez maintenant!')}</a>
           </div>
         </div>
         <div className="mb30 mt15 col-lg-6 mt15 col-xs-12 hidden-xl hidden-lg">
           <div className="center-block center-inside">
-            <a className="btn btn-lg mb30 inline-block greensubsribeButton" href="https://www4.rentcentric.com/Client6145/DiscountQuebecSelfServiceMobile/DQinscription.aspx?LocationCode=LAX&amp;lang=fr">{t('Réservez maintenant!')}></a>
+            <a className="btn btn-lg mb30 inline-block greensubsribeButton" href={t('linkInscription')}>{t('Réservez maintenant!')}</a>
           </div>
         </div>
       </div>

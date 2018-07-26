@@ -20,7 +20,7 @@ export default class Solution extends Component {
                 </div>
               </div>
               <div className="row greenBackground mt-5">
-                <div className="col-md-8 col-md-offset-2 text-white normalText mt60 mb60" style={{lineHeight: 30}}>
+                <div className="col-md-8 col-md-offset-2 text-white normalText mt60 mb60" style={{lineHeight: 2}}>
                   {t('Solution1Texte1')}
                 </div>
               </div>
@@ -211,7 +211,7 @@ export default class Solution extends Component {
                           <div className="field-wrap submit-wrap label-above btn-wrap btn-lg-wrap text-white-wrap text-uppercase-wrap mt30-wrap mb30-wrap green-background-wrap" id="ninja_forms_field_27_div_wrap" data-visible={1}>
                             <input type="hidden" id="ninja_forms_field_27_type" defaultValue="submit" />
                             <div id="nf_submit_10">
-                              <input type="submit" name="_ninja_forms_field_27" className="ninja-forms-field  btn btn-lg text-white text-uppercase mt30 mb30 green-background" id="ninja_forms_field_27" defaultValue="Envoyer la demande" rel={27} />
+                              <input type="submit" name="_ninja_forms_field_27" className="ninja-forms-field  btn btn-lg text-white text-uppercase mt30 mb30 green-background" id="ninja_forms_field_27" defaultValue={t("Envoyer la demande")} rel={27} />
                             </div>
                             <div id="nf_processing_10" style={{display: 'none'}}>
                               <input type="submit" name="_ninja_forms_field_27" className="ninja-forms-field  btn btn-lg text-white text-uppercase mt30 mb30 green-background" id="ninja_forms_field_27" defaultValue="Processing" rel={27} disabled />

@@ -13,31 +13,31 @@ export default class ContactezNous extends Component {
             <Header />
               <div id="phoneBackground" className="row">
                 <div id="img_container" className="hidden-xs">
-                  <img className="img-responsive" style={{width: '100%'}} src="./image/header-pub.png"/>
+                  <img className="img-responsive" style={{width: '100%'}} src={t('contactImg1')}/>
                 </div>
                 <div className="hidden-lg hidden-sm hidden-md hidden-xl">
-                  <img className="img-center img-responsive alignnone wp-image-246 size-full" src="./image/pub-header-2.png" width={640} height={375} srcSet="https://www.discountquebec.com/libreservice/wp-content/uploads/2016/04/pub-header-2.png 640w, https://www.discountquebec.com/libreservice/wp-content/uploads/2016/04/pub-header-2-300x176.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                  <img className="img-center img-responsive alignnone wp-image-246 size-full" src={t('contactImg2')} width={640} height={375} srcSet="https://www.discountquebec.com/libreservice/wp-content/uploads/2016/04/pub-header-2.png 640w, https://www.discountquebec.com/libreservice/wp-content/uploads/2016/04/pub-header-2-300x176.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
                 </div>
               </div>
               <div id="cardList" className="row greenBackground text-center">
                 <div className="col-lg-10 col-lg-offset-1">
                   <div className="col-lg-4 col-lg-offset-0 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 mr1 mb60 card">
                     <div className="col-xs-12">
-                      <img className="img-responsive img-center circleImage mb10" src="./image/icone-telephone.png" />
+                      <img className="img-responsive img-center circleImage mb10" src={t('contactImg3')} />
                     </div>
                     <p className="text-blue subheader">{t('Par téléphone')}</p>
                     <p className="text-light-gray bigText">{t('numeroTelephone')}</p>
                   </div>
                   <div className="col-lg-4 col-lg-offset-0 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 mr1 mb60 card">
                     <div className="col-xs-12">
-                      <img className="img-responsive img-center circleImage mb10" src="./image/icone-poste.png"/>
+                      <img className="img-responsive img-center circleImage mb10" src={t('contactImg4')}/>
                     </div>
                     <p className="text-blue subheader">{t('Par courriel')}</p>
-                    <p className="text-light-gray mediumText">{t('courriel')}</p>
+                    <p className="text-light-gray mediumText">{t('ContactCourriel')}</p>
                   </div>
                   <div className="col-lg-4 col-lg-offset-0 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 mr1 mb60 card">
                     <div className="col-xs-12">
-                      <img className="img-responsive img-center circleImage mb10" src="./image/icone-email.png" />
+                      <img className="img-responsive img-center circleImage mb10" src={t('contactImg5')} />
                     </div>
                     <p className="text-blue subheader">{t('Par la poste')}</p>
                     <p className="text-light-gray mediumText">{t('FullAdress')}</p>
@@ -116,7 +116,7 @@ export default class ContactezNous extends Component {
                           <div className="field-wrap submit-wrap label-above btn-wrap btn-lg-wrap green-background-wrap text-white-wrap text-uppercase-wrap" id="ninja_forms_field_13_div_wrap" data-visible={1}>
                             <input type="hidden" id="ninja_forms_field_13_type" defaultValue="submit" />
                             <div id="nf_submit_6">
-                              <input type="submit" name="_ninja_forms_field_13" className="ninja-forms-field  btn btn-lg green-background text-white text-uppercase" id="ninja_forms_field_13" defaultValue="Soumettre" rel={13} />
+                              <input type="submit" name="_ninja_forms_field_13" className="ninja-forms-field  btn btn-lg green-background text-white text-uppercase" id="ninja_forms_field_13" defaultValue={t('soumettre')} rel={13} />
                             </div>
                             <div id="nf_processing_6" style={{display: 'none'}}>
                               <input type="submit" name="_ninja_forms_field_13" className="ninja-forms-field  btn btn-lg green-background text-white text-uppercase" id="ninja_forms_field_13" defaultValue="Processing" rel={13} disabled />
